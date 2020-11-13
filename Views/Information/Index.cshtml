@@ -1,0 +1,24 @@
+﻿@model ModelView.Models.InformationViewModel1
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<h3>List of Cars</h3>
+<ul>
+    @foreach (var car in Model.Car)
+    {
+        <li>@car.Name</li>
+        <li>@car.Price</li>
+    }
+</ul>
+<h3>List of Customers</h3>
+<ul>
+    @foreach(var customer in Model.Customers)
+    {
+        <li>@customer.Custname</li>
+        <li>@customer.Custcity</li>
+    }
+</ul>
+
